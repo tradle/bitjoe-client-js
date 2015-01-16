@@ -1,5 +1,5 @@
 {
-  "name": "bitjoeAPI",
+  "name": "bitjoe-client-js",
   "version": "0.0.1",
   "description": "API to tradle's bitjoe component",
   "main": "index.js",
