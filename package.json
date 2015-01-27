@@ -6,17 +6,19 @@
   "scripts": {
     "postinstall": "cp node_modules/tradle-style/.js* .",
     "jsbeautify": "js-beautify -r {*.js,**/*.js}",
+    "jscs": "jscs {*.js,**/*.js}",
     "jshint": "jshint {*.js,**/*.js}",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "pre-commit": [
-    "jsbeautify",
+    "jscs",
     "jshint"
   ],
   "author": "Mark Vayngrib <mark.vayngrib@lablz.com> (http://github.com/mvayngrib)",
   "license": "MIT",
   "devDependencies": {
     "js-beautify": "latest",
+    "jscs": "^1.10.0",
     "jshint": "latest",
     "pre-commit": "0.0.11",
     "tape": "^3.0.3",
