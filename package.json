@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "cp node_modules/tradle-style/.js* .",
-    "jsbeautify": "js-beautify -r **.js",
-    "jshint": "jshint **.js",
+    "jsbeautify": "js-beautify -r {*.js,**/*.js}",
+    "jshint": "jshint {*.js,**/*.js}",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "pre-commit": [

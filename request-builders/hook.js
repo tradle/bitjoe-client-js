@@ -1,4 +1,3 @@
-
 'use strict';
 
 function Builder(api) {
@@ -9,17 +8,17 @@ function Builder(api) {
 /**
  *  {string} url to call back on
  */
-Builder.prototype.url = function(url) {
+Builder.prototype.url = function (url) {
   this._params.url = url;
   return this;
 }
 
-Builder.prototype.event = function(event) {
+Builder.prototype.event = function (event) {
   this._params.event = event;
   return this;
 }
 
-Builder.prototype.execute = function(cb) {
+Builder.prototype.execute = function (cb) {
   return this._api.post('hooks', null, this._params, cb);
 }
 
