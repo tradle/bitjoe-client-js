@@ -4,10 +4,9 @@
   "description": "API to tradle's bitjoe component",
   "main": "index.js",
   "scripts": {
-    "postinstall": "cp node_modules/tradle-style/.js* .",
-    "jsbeautify": "js-beautify -r {*.js,**/*.js}",
-    "jscs": "jscs {*.js,**/*.js}",
-    "jshint": "jshint {*.js,**/*.js}",
+    "jsbeautify": "js-beautify -r {*.js,**/*.js} --config=node_modules/tradle-style/.jsbeautifyrc",
+    "jscs": "jscs {*.js,**/*.js} --config=node_modules/tradle-style/.jscsrc",
+    "jshint": "jshint {*.js,**/*.js} --config=node_modules/tradle-style/.jshintrc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "pre-commit": [
