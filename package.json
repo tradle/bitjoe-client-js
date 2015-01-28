@@ -22,5 +22,8 @@
     "pre-commit": "0.0.11",
     "tape": "^3.0.3",
     "tradle-style": "latest"
+  },
+  "dependencies": {
+    "request": "^2.51.0"
   }
 }
